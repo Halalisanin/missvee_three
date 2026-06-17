@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Miss Vee Perfume — get in touch, read frequently asked questions.">
-  <title>Contact — Miss Vee Perfume</title>
+  <meta name="description" content="Contact Miss Vee Perfume. Get in touch and read frequently asked questions.">
+  <title>Contact. Miss Vee Perfume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="demo-notice">
-    <strong>Design Prototype</strong> — Concept Three: Artisanal Storytelling &amp; Emotional Scent
-  </div>
-
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="site-logo">Miss Vee <span>Perfume</span></a>
@@ -44,26 +40,34 @@
   <section class="page-header">
     <div class="container">
       <h1 class="page-header__title">Write to Me</h1>
-      <p class="page-header__subtitle">A fragrance begins with a conversation. I would love to hear from you.</p>
+      <p class="page-header__subtitle">A fragrance starts with a conversation. I would love to hear from you.</p>
     </div>
   </section>
 
   <section class="contact-section">
     <div class="container container--narrow">
-      <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you for your message. I will reply soon — I answer every letter personally. (This is a prototype.)');this.reset();">
-        <label for="contactName">Your Name</label>
-        <input type="text" id="contactName" required placeholder="e.g. Thandiwe M.">
-        <label for="contactEmail">Email Address</label>
-        <input type="email" id="contactEmail" required placeholder="you@example.com">
-        <label for="contactSubject">Subject</label>
-        <select id="contactSubject">
-          <option value="general">General Enquiry</option>
-          <option value="wholesale">Wholesale</option>
-          <option value="order">Order Support</option>
-          <option value="custom">Custom Scent</option>
-        </select>
-        <label for="contactMessage">Your Message</label>
-        <textarea id="contactMessage" rows="6" required placeholder="Tell me what is on your mind..."></textarea>
+      <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you for your message. I will reply soon. (This is a prototype.)');this.reset();">
+        <div class="form-group">
+          <label for="contactName">Your Name</label>
+          <input type="text" id="contactName" required placeholder="e.g. Thandiwe M.">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+          <select id="contactSubject">
+            <option value="general">General Enquiry</option>
+            <option value="wholesale">Wholesale</option>
+            <option value="order">Order Support</option>
+            <option value="custom">Custom Scent</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Your Message</label>
+          <textarea id="contactMessage" rows="6" required placeholder="Tell me what is on your mind..."></textarea>
+        </div>
         <button type="submit" class="btn btn--primary">Send Message</button>
       </form>
     </div>
@@ -76,41 +80,46 @@
       <div class="faq-item">
         <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Are your fragrances natural?</span>
-          <span class="faq-arrow">↓</span>
         </div>
-        <div class="faq-answer">Every Miss Vee fragrance is blended with a combination of natural essential oils and high-quality fragrance oils. I believe that a beautiful scent does not need to choose between natural and synthetic — it simply needs to be well-crafted. All products are vegan and cruelty-free.</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Every Miss Vee fragrance blends natural essential oils with high-quality fragrance oils. I believe a beautiful scent does not have to pick between natural and synthetic. It just needs to be well made. All products are vegan and cruelty-free.</div>
+        </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>How long does a bottle last?</span>
-          <span class="faq-arrow">↓</span>
         </div>
-        <div class="faq-answer">Our 50ml Eau de Parfum lasts approximately 3–4 months with daily use of 2–3 sprays. The 100ml size gives you 6–8 months. Store your perfume in a cool, dark place away from direct sunlight to preserve its character.</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Our 50ml Eau de Parfum lasts about 3 to 4 months with daily use of 2 to 3 sprays. The 100ml size gives you 6 to 8 months. Keep your perfume in a cool, dark place away from direct sunlight to preserve it.</div>
+        </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Do you offer samples?</span>
-          <span class="faq-arrow">↓</span>
         </div>
-        <div class="faq-answer">I do. A 2ml sample of any fragrance is R25. Samples are the best way to discover whether a scent speaks to you. I recommend living with a sample for at least a week before deciding on a full bottle.</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">I do. A 2ml sample of any fragrance is R25. Samples are the best way to find out if a scent speaks to you. I recommend living with a sample for at least a week before deciding on a full bottle.</div>
+        </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Can I return a fragrance if I do not like it?</span>
-          <span class="faq-arrow">↓</span>
         </div>
-        <div class="faq-answer">Yes. If a scent does not feel like yours, you may return it within 14 days of delivery. The product must be unused and in its original packaging. I will process a full refund. I cannot accept returns on samples.</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. If a scent does not feel like yours, return it within 14 days of delivery. The product must be unused and in its original packaging. I will process a full refund. I cannot accept returns on samples.</div>
+        </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
           <span>Do you ship internationally?</span>
-          <span class="faq-arrow">↓</span>
         </div>
-        <div class="faq-answer">At this time, I ship within South Africa only. International shipping is something I am working toward. If you are based outside SA and would like to be notified when this changes, please subscribe to the newsletter — I will share the news there first.</div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Right now I ship within South Africa only. International shipping is something I am working toward. If you are outside SA and would like to know when this changes, subscribe to the newsletter. I will share the news there first.</div>
+        </div>
       </div>
 
     </div>
@@ -132,7 +141,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-brand__name">Miss Vee Perfume</div>
-          <p class="footer-brand__text">Artisanal fragrances born from memory and emotion. Based in Ekurhuleni, Gauteng, South Africa.</p>
+          <p class="footer-brand__text">Handmade fragrances in Ekurhuleni, Gauteng. Made from memories, not marketing briefs.</p>
         </div>
         <div>
           <h4 class="footer-heading">Shop</h4>

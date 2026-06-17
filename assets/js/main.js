@@ -222,7 +222,7 @@
           if (filter === 'all') {
             cards[c].style.display = 'flex';
           } else {
-            var cardType = cards[c].getAttribute('data-type');
+            var cardType = cards[c].getAttribute('data-category');
             cards[c].style.display = (cardType === filter) ? 'flex' : 'none';
           }
         }
@@ -263,10 +263,12 @@
 
         if (expanded) {
           question.setAttribute('aria-expanded', 'false');
+          question.classList.remove('open');
           answer.style.maxHeight = '0';
           answer.style.padding = '0 1.5rem';
         } else {
           question.setAttribute('aria-expanded', 'true');
+          question.classList.add('open');
           answer.style.maxHeight = answer.scrollHeight + 40 + 'px';
           answer.style.padding = '0 1.5rem 1.5rem';
         }
@@ -335,7 +337,7 @@
           if (priceEl) priceEl.innerHTML = price + ' <span class="product-info__vat">incl. VAT</span>';
           var btn = section.querySelector('.js-add-to-cart');
           if (btn) {
-            var sizeText = this.textContent.trim().split('—')[0].trim();
+            var sizeText = this.textContent.trim().split('·')[0].trim();
             btn.setAttribute('data-product-size', sizeText);
             btn.setAttribute('data-product-price', price);
           }
