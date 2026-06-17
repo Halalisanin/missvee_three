@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Miss Vee Perfume — get in touch, read frequently asked questions.">
+  <title>Contact — Miss Vee Perfume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="demo-notice">
+    <strong>Design Prototype</strong> — Concept Three: Artisanal Storytelling &amp; Emotional Scent
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Miss Vee <span>Perfume</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-list" id="navList">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="scent-guide.html">Scent Journal</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 5h13l-2 8H7L5 5z"/>
+            <path d="M5 5L3 2H1"/>
+            <circle cx="7" cy="17" r="1.5"/>
+            <circle cx="14" cy="17" r="1.5"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Write to Me</h1>
+      <p class="page-header__subtitle">A fragrance begins with a conversation. I would love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container container--narrow">
+      <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you for your message. I will reply soon — I answer every letter personally. (This is a prototype.)');this.reset();">
+        <label for="contactName">Your Name</label>
+        <input type="text" id="contactName" required placeholder="e.g. Thandiwe M.">
+        <label for="contactEmail">Email Address</label>
+        <input type="email" id="contactEmail" required placeholder="you@example.com">
+        <label for="contactSubject">Subject</label>
+        <select id="contactSubject">
+          <option value="general">General Enquiry</option>
+          <option value="wholesale">Wholesale</option>
+          <option value="order">Order Support</option>
+          <option value="custom">Custom Scent</option>
+        </select>
+        <label for="contactMessage">Your Message</label>
+        <textarea id="contactMessage" rows="6" required placeholder="Tell me what is on your mind..."></textarea>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <h2 class="faq-section__title">Questions Often Asked</h2>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+          <span>Are your fragrances natural?</span>
+          <span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-answer">Every Miss Vee fragrance is blended with a combination of natural essential oils and high-quality fragrance oils. I believe that a beautiful scent does not need to choose between natural and synthetic — it simply needs to be well-crafted. All products are vegan and cruelty-free.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+          <span>How long does a bottle last?</span>
+          <span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-answer">Our 50ml Eau de Parfum lasts approximately 3–4 months with daily use of 2–3 sprays. The 100ml size gives you 6–8 months. Store your perfume in a cool, dark place away from direct sunlight to preserve its character.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+          <span>Do you offer samples?</span>
+          <span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-answer">I do. A 2ml sample of any fragrance is R25. Samples are the best way to discover whether a scent speaks to you. I recommend living with a sample for at least a week before deciding on a full bottle.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+          <span>Can I return a fragrance if I do not like it?</span>
+          <span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-answer">Yes. If a scent does not feel like yours, you may return it within 14 days of delivery. The product must be unused and in its original packaging. I will process a full refund. I cannot accept returns on samples.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+          <span>Do you ship internationally?</span>
+          <span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-answer">At this time, I ship within South Africa only. International shipping is something I am working toward. If you are based outside SA and would like to be notified when this changes, please subscribe to the newsletter — I will share the news there first.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container container--narrow">
+      <h2 class="newsletter__title">Stay in Touch</h2>
+      <p class="newsletter__text">New scents, studio stories, and 10% off your first order.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you. A letter will arrive in your inbox soon. (This is a prototype.)');this.reset();">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__name">Miss Vee Perfume</div>
+          <p class="footer-brand__text">Artisanal fragrances born from memory and emotion. Based in Ekurhuleni, Gauteng, South Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="perfumes.html">Perfumes</a>
+            <a href="diffusers.html">Diffusers</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Journal</h4>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="scent-guide.html">Scent Journal</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">FAQ</a>
+            <a href="contact.html">Shipping</a>
+            <a href="contact.html">Returns</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Miss Vee Perfume. All rights reserved.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
